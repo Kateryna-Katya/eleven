@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?= $domainTitle ?> — Карьерный апгрейд и инновационные стратегии
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='6' fill='%230A0A0A'/%3E%3Cpath d='M10 22L22 10M22 10H14M22 10V18' stroke='%23F3FF00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 25H24' stroke='%23F3FF00' stroke-width='2' stroke-opacity='0.3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./#hero" class="logo">
+                    <span class="logo__dot"></span>
+                    <?= $domainTitle ?>
+                </a>
+
+                <ul class="menu">
+                    <li><a href="./#hero" class="menu__link">Главная</a></li>
+                    <li><a href="./#strategy" class="menu__link">Стратегии</a></li>
+                    <li><a href="./#expertise" class="menu__link">Экспертиза</a></li>
+                    <li><a href="./#reviews" class="menu__link">Успех</a></li>
+                    <li><a href="./#blog" class="menu__link">Блог</a></li>
+                </ul>
+
+                <a href="./#contact" class="btn btn--header">
+                    <span>Связаться</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <button class="burger" aria-label="Menu">
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero" id="hero">
+        <div id="hero-canvas" class="hero__canvas"></div>
+    
+        <div class="container hero__container">
+            <div class="hero__content">
+                <div class="hero__badge" data-aos="fade-right">
+                    <span class="hero__badge-dot"></span>
+                    Технология нового поколения
+                </div>
+    
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+                    Постройте карьеру, которая <br>
+                    <span class="text-highlight">работает на вас</span>
+                </h1>
+    
+                <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+                    Инновационная технология карьерного апгрейда в Германии. Переосмыслите подход к развитию и откройте
+                    новые возможности в европейском тех-секторе.
+                </p>
+    
+                <div class="hero__actions" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="btn btn--primary">
+                        Начать сейчас
+                        <i data-lucide="zap"></i>
+                    </a>
+                    <a href="#strategy" class="btn btn--outline">
+                        Узнать детали
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero__scroll" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+    <section class="strategy" id="strategy">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">Решения, которые меняют правила игры</span>
+                <h2 class="section-header__title">Стратегии успеха</h2>
+            </div>
+    
+            <div class="strategy__grid">
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="strategy-card__icon">
+                        <i data-lucide="binary"></i>
+                    </div>
+                    <h3 class="strategy-card__title">AI-инструменты для задач</h3>
+                    <p class="strategy-card__text">Интеграция нейросетей в ваш рабочий процесс для повышения продуктивности
+                        и востребованности на рынке труда Германии.</p>
+                    <ul class="strategy-card__list">
+                        <li><i data-lucide="check-circle-2"></i> Автоматизация рутины</li>
+                        <li><i data-lucide="check-circle-2"></i> Создание портфолио с AI</li>
+                    </ul>
+                </div>
+    
+                <div class="strategy-card strategy-card--featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="strategy-card__icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="strategy-card__title">Стратегия роста на базе инноваций</h3>
+                    <p class="strategy-card__text">Пошаговый путь перехода на руководящие позиции в топовых европейских
+                        компаниях с фокусом на результат.</p>
+                    <div class="strategy-card__badge">Популярно</div>
+                </div>
+    
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="strategy-card__icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="strategy-card__title">Европейский нетворкинг</h3>
+                    <p class="strategy-card__text">Методологии, доказавшие эффективность: выстраивание связей, которые
+                        открывают скрытые вакансии.</p>
+                    <ul class="strategy-card__list">
+                        <li><i data-lucide="check-circle-2"></i> Работа с LinkedIn & Xing</li>
+                        <li><i data-lucide="check-circle-2"></i> Прямой выход на HR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="expertise__wrapper">
+                <div class="expertise__content" data-aos="fade-right">
+                    <div class="section-header">
+                        <span class="section-header__subtitle">Методологии, доказавшие эффективность</span>
+                        <h2 class="section-header__title">Наша экспертиза</h2>
+                    </div>
+                    <p class="expertise__description">
+                        Мы объединяем глубокое знание немецкого рынка труда с передовыми технологиями оценки талантов. Наша
+                        цель — ваш быстрый и лёгкий старт в новой роли.
+                    </p>
+    
+                    <div class="expertise__skills">
+                        <div class="skill-item">
+                            <div class="skill-item__info">
+                                <span>Оптимизация CV (немецкий стандарт)</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__info">
+                                <span>Подготовка к интервью (AI-симуляции)</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__info">
+                                <span>Переговоры о зарплате</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="expertise__image-side" data-aos="fade-left" data-aos-delay="200">
+                    <div class="expertise__image-container">
+                        <img src="/img/one.jpg" alt="Expertise" class="expertise__img">
+                        <div class="expertise__experience-card">
+                            <span class="number">10+</span>
+                            <span class="label">лет опыта в EU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">Доверие и экспертность</span>
+                <h2 class="section-header__title">Истории успеха</h2>
+            </div>
+    
+            <div class="swiper reviews-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-card__user">
+                                <div class="review-card__avatar">AM</div>
+                                <div class="review-card__info">
+                                    <h4 class="review-card__name">Alexander M.</h4>
+                                    <p class="review-card__role">Senior Developer @ Berlin Tech</p>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                «Решения, которые меняют правила игры. Благодаря платформе смог переосмыслить подход к
+                                развитию и выйти на новый уровень дохода в Германии всего за 3 месяца».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-card__user">
+                                <div class="review-card__avatar">DK</div>
+                                <div class="review-card__info">
+                                    <h4 class="review-card__name">Daniel K.</h4>
+                                    <p class="review-card__role">Project Manager</p>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                «Экспертная поддержка на всех этапах. Методологии, доказавшие эффективность, помогли пройти
+                                сложный отбор в международную компанию».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-card__user">
+                                <div class="review-card__avatar">LS</div>
+                                <div class="review-card__info">
+                                    <h4 class="review-card__name">Laura S.</h4>
+                                    <p class="review-card__role">UI/UX Designer</p>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                «Пошаговый путь, понятный каждому. Открыла новые возможности для пассивного дохода и
+                                полностью обновила профессиональное портфолио».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">База знаний</span>
+                <h2 class="section-header__title">Наш блог</h2>
+            </div>
+    
+            <div class="blog__grid">
+                <article class="blog-card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="blog-card__date">18 Feb 2026</div>
+                    <h3 class="blog-card__title">AI-инструменты для реальных задач: как не остаться за бортом</h3>
+                    <p class="blog-card__excerpt">Разбираем передовую цифровую инфраструктуру, которая работает на вас уже
+                        сегодня.</p>
+                    <a href="#contact" class="blog-card__link">
+                        Читать далее <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+    
+                <article class="blog-card blog-card--accent" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="blog-card__date">15 Feb 2026</div>
+                    <h3 class="blog-card__title">Стратегия роста на базе инноваций в странах ЕС</h3>
+                    <p class="blog-card__excerpt">Методологии, доказавшие эффективность при релокации и смене карьерного
+                        трека.</p>
+                    <a href="#contact" class="blog-card__link">
+                        Читать далее <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+    
+                <article class="blog-card" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="blog-card__date">10 Feb 2026</div>
+                    <h3 class="blog-card__title">Технологии, которые работают на вас: пассивный доход</h3>
+                    <p class="blog-card__excerpt">Как построить карьеру, которая обеспечивает стабильность и расширяет
+                        горизонты.</p>
+                    <a href="#contact" class="blog-card__link">
+                        Читать далее <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__info" data-aos="fade-right">
+                    <div class="section-header">
+                        <span class="section-header__subtitle">Связаться</span>
+                        <h2 class="section-header__title">Готовы к апгрейду?</h2>
+                    </div>
+                    <p class="contact__text">
+                        Запросите доступ к платформе или получите бесплатную консультацию по всем вопросам развития карьеры
+                        в Европе.
+                    </p>
+                    <div class="contact__labels">
+                        <div class="contact__label">⚡ Платформа года</div>
+                        <div class="contact__label">⚡ Экспертная поддержка</div>
+                    </div>
+                </div>
+    
+<div class="contact__form-container" data-aos="fade-left">
+    <div class="form__message" id="formMessage"></div>
+
+    <form class="form" id="contactForm">
+        <div class="form__group">
+            <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+        </div>
+        <div class="form__group">
+            <input type="email" name="email" class="form__input" placeholder="Email" required>
+        </div>
+        <div class="form__group">
+            <input type="tel" id="phoneInput" name="phone" class="form__input" placeholder="Телефон (только цифры)"
+                required>
+        </div>
+
+        <div class="form__captcha">
+            <span class="form__captcha-text" id="captchaQuestion"></span>
+            <input type="number" id="captchaAnswer" class="form__input form__input--captcha" placeholder="Ответ"
+                required>
+        </div>
+
+        <label class="form__checkbox">
+            <input type="checkbox" required>
+            <span class="form__checkbox-custom"></span>
+            <span class="form__checkbox-text">Я согласен с политикой конфиденциальности и условиями платформы</span>
+        </label>
+
+        <button type="submit" class="btn btn--primary form__submit">
+            <span>Начать сейчас</span>
+            <i data-lucide="send"></i>
+        </button>
+    </form>
+</div>
+            </div>
+        </div>
+    </section>
+    
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="./#hero" class="logo footer__logo">
+                        <span class="logo__dot"></span>
+                        <?= $domainTitle ?>
+                    </a>
+                    <p class="footer__text">
+                        Инновационная технология вашего карьерного роста. Решения, которые меняют правила игры на рынке
+                        труда Европы.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__links">
+                        <li><a href="./#hero">Главная</a></li>
+                        <li><a href="./#strategy">Стратегии</a></li>
+                        <li><a href="./#expertise">Экспертиза</a></li>
+                        <li><a href="./#blog">Блог</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Документы</h4>
+                    <ul class="footer__links">
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Terms of Service</a></li>
+                    <li><a href="./return.php">Return Policy</a></li>
+                    <li><a href="./disclaimer.php">Disclaimer</a></li>
+                    <li><a href="./contact.php">Contact Us</a></li>
+                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__contacts">
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <a href="tel:+493009014932">+49 30 0901 4932</a>
+                        </li>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:hello@<?= $fullDomain ?>">hello@
+                                <?= $fullDomain ?>
+                            </a>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>Friedrichstraße 68, 10117 Berlin, Germany</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy;
+                    <?= date('Y') ?>
+                    <?= $domainTitle ?>. Все права защищены. Предложение активно только в странах ЕС.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <ul class="mobile-menu__list">
+                <li><a href="./#hero">Главная</a></li>
+                <li><a href="./#strategy">Стратегии</a></li>
+                <li><a href="./#expertise">Экспертиза</a></li>
+                <li><a href="./#reviews">Успех</a></li>
+                <li><a href="./#blog">Блог</a></li>
+                <li><a href="./#contact" class="btn btn--primary">Консультация</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="cookie-popup" id="cookiePopup">
+        <div class="cookie-popup__content">
+            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
+                    политике</a>.</p>
+            <button class="btn btn--primary btn--small" id="acceptCookies">Принять</button>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
